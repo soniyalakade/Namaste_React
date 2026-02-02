@@ -1,12 +1,33 @@
-const parent = React.createElement("div", 
-    {id: "parent"}, 
-    React.createElement("div", {id: "child"}, [
-        React.createElement("h1", {}, "I am h1 tag" ), 
-        React.createElement("h1", {}, "I am 2nd h1 tag", )
-    ]));
-    
-const heading = React.createElement("h1", {id: "heading", xyz: "abc"}, "Hello World from React");
+import React from "react";
+import ReactDOM from "react-dom/client";
+import logo from "./components/logo.png"; 
 
-console.log(parent);
+const Header = () =>{
+    return (
+        <div className="header">
+            <div className="logo-container">
+                <img className="logo" src={logo}/>
+            </div>
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Contact Us</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+        </div>
+    )
+}
+
+const AppLayout = () =>{
+    return (
+        <div className="app">
+            <Header/>
+        </div>
+    )
+}
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+root.render(<AppLayout/>);

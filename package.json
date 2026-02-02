@@ -1,0 +1,36 @@
+{
+  "name": "namaste_react",
+  "version": "1.0.0",
+  "description": "This is Namaste React by Akshay Saini",
+  "keywords": [
+    "react",
+    "namaste_react",
+    "soniya"
+  ],
+  "homepage": "https://github.com/soniyalakade/Namaste_React#readme",
+  "bugs": {
+    "url": "https://github.com/soniyalakade/Namaste_React/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soniyalakade/Namaste_React.git"
+  },
+  "license": "ISC",
+  "author": "\"Soniya Lakade\"",
+  "type": "module",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}

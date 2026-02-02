@@ -1,7 +1,11 @@
-#heading {
-    color: #c02828;
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-#child{
-    color:#6838c3;
+.logo {
+  height: 60px;     
+  width: auto;
+  object-fit: contain;
 }
